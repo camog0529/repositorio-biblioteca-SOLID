@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="650.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.controlador.BibliotecaController" style="-fx-background-image: url('/fomdoBiblioteca.jpg'); -fx-background-size: cover; -fx-background-position: center;">
+<AnchorPane prefHeight="650.0" prefWidth="1050.0" style="-fx-background-image: url('/fomdoBiblioteca.jpg'); -fx-background-size: cover; -fx-background-position: center;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.controlador.BibliotecaController">
     <children>
         <HBox spacing="20.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
             <children>
@@ -17,13 +17,16 @@
                                 <Font name="System Bold" size="16.0" />
                             </font>
                         </Label>
-                        <Label text="Código (Obligatorio)" />
+                        <Label text="Código (Obligatorio)" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
                         <TextField fx:id="txtCodigo" promptText="Ej: L001" />
-                        <Label text="Título (Obligatorio)" />
+                        <Label text="Título (Obligatorio)" textFill="WHITE" />
                         <TextField fx:id="txtTitulo" promptText="Ej: Cien años de soledad" />
-                        <Label text="Autor (Opcional)" />
+                        <Label text="Autor (Opcional)" textFill="WHITE" />
                         <TextField fx:id="txtAutor" promptText="Ej: Gabriel García Márquez" />
-                        <Label text="Categoría (Opcional)" />
+                        <Label text="Categoría (Opcional)" textFill="WHITE" />
                         <TextField fx:id="txtCategoria" promptText="Ej: Novela" />
                         <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#manejarRegistrarLibro" style="-fx-background-color: #28a745; -fx-text-fill: white; -fx-font-weight: bold;" text="Registrar Libro">
                             <VBox.margin>
